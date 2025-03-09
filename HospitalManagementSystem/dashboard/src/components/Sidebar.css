@@ -1,0 +1,110 @@
+/* Basic sidebar styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #2c3e50;
+    width: 60px; /* Default width for collapsed sidebar */
+    transition: width 0.3s ease; /* Smooth transition when expanding/collapsing */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1000;
+    font-family: sans-serif;
+}
+
+.sidebar.expanded {
+    width: 200px; /* Expanded width */
+}
+
+/* Wrapper for the hamburger menu */
+.wrapper {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    z-index: 1001;
+}
+
+.hamburger {
+    font-size: 24px;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
+/* List style for the sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.sidebar li {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar li:hover {
+    background-color: #34495e;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Text label styles */
+.nav-item {
+    display: inline-block;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* In collapsed mode, hide the text labels */
+.sidebar:not(.expanded) .nav-item {
+    display: none;
+    opacity: 0;
+}
+
+/* Expanded mode: Show the text labels */
+.sidebar.expanded .nav-item {
+    display: inline;
+}
+
+/* Logout item specific styles */
+.sidebar li:last-child {
+    margin-top: auto; /* Push the logout button to the bottom */
+    border-top: 1px solid #34495e;
+}
+
+/* Additional styling for logout and other navigation effects */
+.sidebar li:active {
+    background-color: #1abc9c; /* Active state color */
+}
+
+/* Hides sidebar when user is authenticated (optional) */
+.sidebar[style*="display: none"] {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust sidebar for mobile screens */
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar.expanded {
+        width: 150px;
+    }
+
+    .hamburger {
+        font-size: 20px;
+    }
+}

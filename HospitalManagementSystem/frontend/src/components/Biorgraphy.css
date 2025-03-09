@@ -1,0 +1,71 @@
+.Biorgraphy {
+    padding: 50px 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .Biorgraphy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .Biorgraphy-h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 40px;
+  }
+  
+  .container-left {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+  }
+  
+  .Biorgraphyimage {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-right {
+    flex: 2;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .container-right p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .container-left, 
+    .container-right {
+      margin: 0;
+      max-width: 100%;
+    }
+  
+    .container-right {
+      margin-top: 20px;
+    }
+  
+    .Biorgraphyimage {
+      margin: 0 auto;
+    }
+  }
+  

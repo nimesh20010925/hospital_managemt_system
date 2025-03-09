@@ -1,0 +1,163 @@
+/* General Page Styling */
+.dashboard.page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-left: 70px;
+  }
+  
+  .dashboard-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .first-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .welcome-message {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .user-name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .dashboard-description {
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  .second-box, .third-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box-title {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .box-value {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Appointments Section */
+  .dashboard-banner2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointments-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1em;
+  }
+  
+  .appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .appointments-table th, .appointments-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .appointments-table th {
+    background-color: #f1f1f1;
+  }
+  
+  .appointments-table td {
+    color: #333;
+  }
+  
+  .status-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .status-select.pending {
+    background-color: #ffeeba;
+  }
+  
+  .status-select.accepted {
+    background-color: #c3e6cb;
+  }
+  
+  .status-select.rejected {
+    background-color: #f5c6cb;
+  }
+  
+  .green {
+    color: #28a745;
+    font-size: 1.5em;
+  }
+  
+  .red {
+    color: #dc3545;
+    font-size: 1.5em;
+  }
+  
+  .no-appointments {
+    text-align: center;
+    color: #777;
+  }
+
+  .delete-button {
+    background-color: transparent; /* No background */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Show pointer on hover */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    transition: transform 0.2s, color 0.2s; /* Smooth transition for effects */
+  }
+  
+  .delete-button:hover {
+    color: #ff5f5f; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  .delete-icon {
+    font-size: 1.5rem; /* Size of the delete icon */
+    color: #ff4d4d; /* Initial icon color */
+  }
+  
+  .delete-button:active .delete-icon {
+    color: #ff1a1a; /* Darker shade on click */
+  }
+  
+  
